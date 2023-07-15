@@ -3,7 +3,7 @@ import { TracingInstrumentation } from '@grafana/faro-web-tracing';
 
 
 var faro = initializeFaro({
-    url: 'https://faro-collector-prod-ap-south-0.grafana.net/collect/191087ccbd1ce7eb85f8db7901c9cef8',
+    url: process.env.NEXT_PUBLIC_FARO_URL,
     app: {
       name: 'faro-next-app',
       version: '1.0.0',
